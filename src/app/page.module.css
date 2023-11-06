@@ -4,4 +4,49 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  background: linear-gradient(45deg, #000e12, #001b24);
+
+  text-align: center;
+  padding: 24px;
+}
+
+.title {
+  font-size: 500px;
+  line-height: 1em;
+
+  background: linear-gradient(90deg, #a8a9ad, #e3e3e3, #a8a9ad);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @media screen and (max-width: 768px) {
+    font-size: 250px;
+  }
+}
+
+.subtitle {
+  font-size: 50px;
+  line-height: 1.3em;
+
+  background: linear-gradient(90deg, #70706f, #b3b6b5, #70706f);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @media screen and (max-width: 768px) {
+    font-size: 25px;
+  }
+}
+
+.logos {
+  padding: 48px 0;
+  display: flex;
+  flex-direction: row;
+  gap: 36px;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+    padding: 24px 0;
+  }
 }
