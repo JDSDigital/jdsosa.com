@@ -1,3 +1,12 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -19,6 +28,9 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
+  opacity: 0;
+  animation: ease-out fadeIn 2s 0.5s forwards;
+
   @media screen and (max-width: 768px) {
     font-size: 250px;
   }
@@ -33,6 +45,9 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
+  opacity: 0;
+  animation: ease-out fadeIn 2s 1s forwards;
+
   @media screen and (max-width: 768px) {
     font-size: 25px;
   }
@@ -45,6 +60,9 @@
   gap: 36px;
   justify-content: center;
   align-items: center;
+
+  opacity: 0;
+  animation: ease-out fadeIn 2s 1.5s forwards;
 
   @media screen and (max-width: 768px) {
     padding: 24px 0;
